@@ -6,7 +6,7 @@ import { Typewriter } from "typewriter-effect/dist/core";
 
 
 
-export default function Heropage() {
+export default function Heropage () {
   
 
     
@@ -67,4 +67,4 @@ export default function Heropage() {
       </main>
     </div>
   )
-}
+};
