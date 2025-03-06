@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 #slideshow{
-    margin-right: 25px;
+    
    
     color: #eee;
     font-family: Poppins;
@@ -15,10 +15,10 @@
 .carousel{
     height: 100vh;
     /* margin-top: -50px; */
-    width: 96.3vw;
+    
     overflow: hidden;
     position: relative;
-    margin-right: 20px;
+    
     border-radius: 10px;
 }
 .carousel .list .item{
@@ -114,6 +114,7 @@
 /* arrows */
 .arrows{
     position: absolute;
+    display: none;
     top: 80%;
     right: 52%;
     z-index: 100;
@@ -133,6 +134,7 @@
     font-family: monospace;
     font-weight: bold;
     transition: .5s;
+    
 }
 .arrows button:hover{
     background-color: #fff;

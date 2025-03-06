@@ -51,8 +51,8 @@ const Carousel = () => {
   }, []);
 
   return (
-    <section id="slideshow">
-      <div className="carousel" ref={carouselRef}>
+    <section className="md:mr-[25px]" id="slideshow">
+      <div className="carousel md:mr-[20px] md:w-[96.3vw] w-[91vw]" ref={carouselRef}>
         <div className="list" ref={sliderRef}>
           <div className="item">
             <img
