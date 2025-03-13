@@ -61,6 +61,12 @@ export default defineConfig({
         )) {
           return
         }
+        // Ignore missing source map warnings for specific modules
+        if (warning.code === 'SOURCEMAP_ERROR' && (
+          warning.id?.includes('@mediapipe')
+        )) {
+          return
+        }
         warn(warning)
       }
     },
