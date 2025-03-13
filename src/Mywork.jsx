@@ -121,7 +121,7 @@ const Mywork = () => {
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:px-20 md:px-10 gap-6"
         >
           {projects.map((project, index) => (
-            <Link to={project.link}>
+            <Link to={project.link} key={index}>
             <motion.div
               key={index}
               variants={cardVariants}

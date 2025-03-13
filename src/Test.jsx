@@ -1,3 +1,4 @@
+"use client"
 import React, { useEffect } from "react";
 import App from "./App";
 import Avatar from "./Avatar";
@@ -8,30 +9,16 @@ import Typewriter from 'typewriter-effect/dist/core';
 import { IoMdMenu, IoMdClose, IoLogoLinkedin } from "react-icons/io";
 import { useState } from "react";
 import TicTacToe from "./TicTacToe.jsx";
-import { AnimatedTestimonialsDemo } from "./components/ui/Testimonial.jsx";
+// import { AnimatedTestimonialsDemo } from "./components/ui/Testimonial.jsx";
 import ContactUs from "./Contectus.jsx";
 import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion';
 import Mywork from "./Mywork.jsx";
 import { Link } from "react-router-dom";
 import { FaGithub, FaInstagram, FaTwitter } from "react-icons/fa";
 
-
-
-
-
-
-
-
-
-
-
-
 const Test = () => {
 
     const [open, setopen] = useState(false)
-
-
-
 
     const { scrollYProgress } = useScroll();
     const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
@@ -48,8 +35,6 @@ const Test = () => {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
-
-
     useEffect(() => {
 
         new Typewriter('#typed', {
@@ -60,19 +45,10 @@ const Test = () => {
             delay: 75,
         });
 
-
     }, []);
-
-
-
-
-
-
 
     return (
         <>
-
-
 
             <div className=" main overflow-x-hidden  w-screen h-screen bg-gradient-to-br from-stone-800 to-slate-600  ">
                 {/* Navbar */}
@@ -91,8 +67,6 @@ const Test = () => {
                     </a>
                     
                 </nav>
-
-
 
                 {open && (
                     <div className="md:hidden h-[70vh] w-full absolute top-20 p-2 z-50">
@@ -152,8 +126,6 @@ const Test = () => {
                     </div>
                 )}
 
-
-
                 <div className="w-full min-h-[100vh] lg:px-4  px-2 mb-4 flex flex-col gap-3  ">
 
                     {/* page1 */}
@@ -184,8 +156,6 @@ const Test = () => {
                                     </button>
                                 </Link>
                             </div>
-
-
 
                         </div>
                         <div className=" Right  hidden h-full w-1/2 mr-4 md:flex items-center justify-center">
@@ -419,12 +389,10 @@ const Test = () => {
                         </div>
                     </AnimatePresence> {/* page2 */}
                     
-
                     {/* page3 */}
                     {/* <div className=" relative  items-center justify-center w-full  min-h-screen flex  rounded-lg md:ml-12 ml-6">
                         <Carousel />
                     </div> */}
-
 
                     {/* page4 */}
 
@@ -446,8 +414,6 @@ const Test = () => {
 
                     </div>
 
-
-
                     {/* page7 */}
                     <motion.div
                         initial={{ x: 100, opacity: 0 }}
@@ -455,35 +421,25 @@ const Test = () => {
                         transition={{ duration: 0.8 }}
                         className="w-full min-h-screen font-sans justify-center items-center md:flex flex-col    bg-white bg-opacity-10 backdrop-blur-md  rounded-lg ">
 
-
                         <TicTacToe />
-
-
 
                     </motion.div>
 
-                    <div className="w-full min-h-screen  justify-center items-center md:flex flex-col bg-gradient-to-br from-stone-900 to-slate-800     bg-opacity-10 backdrop-blur-md  rounded-lg ">
+                    {/* <div className="w-full min-h-screen  justify-center items-center md:flex flex-col bg-gradient-to-br from-stone-900 to-slate-800     bg-opacity-10 backdrop-blur-md  rounded-lg ">
 
                         <h1 className="text-4xl text-center mt-5 mb-6 font-extrabold text-orange-600">Testimonial</h1>
 
-
                         <AnimatedTestimonialsDemo />
 
-
-
-                    </div>
+                    </div> */}
 
                     <div id="contact" className="w-full min-h-screen  justify-center items-center md:flex flex-col bg-gradient-to-br from-stone-900 to-slate-800     bg-opacity-10 backdrop-blur-md  rounded-lg ">
 
                         <ContactUs />
 
-
-
                     </div>
 
-
                 </div >
-
 
             </div>
 
