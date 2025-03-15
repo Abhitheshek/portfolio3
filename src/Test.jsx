@@ -129,11 +129,11 @@ const Test = () => {
                 <div className="w-full min-h-[100vh] lg:px-4  px-2 mb-4 flex flex-col gap-3  ">
 
                     {/* page1 */}
-                    <div id="home" className="  w-full min-h-[90vh] flex flex-col  md:flex-row  items-start  md:text-left  justify-center bg-gradient-to-br from-stone-900 to-slate-800  rounded-lg pb-6  ">
-                        <div className=" flex flex-col justify-center  items-end left h-full md:w-1/2 w-full ml-8 mt-10">
-                            <div className="detail">
+                    <div id="home" className="  w-full min-h-[90vh] flex flex-col  md:flex-row  items-start  md:text-left  justify-center bg-gradient-to-br from-stone-900 to-slate-800  rounded-lg pb-6 font-sans font-bold  ">
+                        <div className=" flex flex-col justify-center  items-center  h-full md:w-1/2 w-full ml-0 pr-3 overflow-auto mt-10">
+                            <div className="">
                                 <span className=" text-white inline-block lg:text-5xl md:text-4xl text-3xl pt-12 md:pb-6 lg:pb-5">Hii,There</span>
-                                <div className="space-x-2 mb-4">
+                                <div className="space-x-4 mb-4">
                                     <span className="text-white text-2xl sm:text-3xl lg:text-4xl">I'm</span>
                                     <span className="text-orange-600 text-2xl sm:text-3xl lg:text-4xl">Abhishek</span>
                                     <span className="text-white text-2xl sm:text-3xl lg:text-4xl">Yadav</span>
@@ -142,7 +142,7 @@ const Test = () => {
                                     <span className="text-white text-2xl sm:text-3xl lg:text-3xl">I'm a </span>
                                     {/* Desktop/Tablet Version */}
                                     <br className="lg:hidden " />
-                                    <span className="text-orange-700  md:inline-block text-2xl sm:text-3xl" id="typed">
+                                    <span className="text-orange-700  md:inline-block overflow-visible text-xl sm:text-3xl" id="typed">
                                         Developer
                                     </span>
                                    

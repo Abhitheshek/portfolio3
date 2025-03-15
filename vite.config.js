@@ -4,6 +4,7 @@ import terser from '@rollup/plugin-terser'
 
 export default defineConfig({
   build: {
+    outDir: 'dist',
     chunkSizeWarningLimit: 1600, // Increase the warning limit (default is 500 KB)
     rollupOptions: {
       external: [
